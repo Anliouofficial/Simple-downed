@@ -1,0 +1,115 @@
+# RescuePlugin 配置文件
+# 版本: 1.2
+# 修改后需重启服务器或使用 /rl 重载配置
+
+# =============== 核心设置 ===============
+rescue-settings:
+  # 倒地后最大等待时间（秒）
+  max-wait-time: 45
+
+  # 复活时的生命值百分比（0.1-1.0）
+  revive-health: 0.2
+
+  # 是否禁止倒地玩家跳跃
+  prevent-jump: true
+
+# =============== 视觉效果设置 ===============
+visual-effects:
+  # BossBar 设置
+  bossbar:
+    # 显示文本（支持颜色代码）
+    title: "&4&l救援倒计时"
+
+    # 颜色选项：PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+    color: RED
+
+    # 样式选项：SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20, SOLID
+    style: SEGMENTED_20
+
+  # 悬浮文字设置
+  hologram:
+    # 悬浮文字内容（支持颜色代码）
+    text: "&c⚡ 倒地状态 ⚡"
+
+    # 悬浮高度（基于玩家位置）
+    y-offset: 2.2
+
+  # 粒子效果设置
+  particles:
+    # 粒子类型：REDSTONE, TOTEM, HEART 等
+    type: REDSTONE
+
+    # 粒子数量
+    count: 15
+
+    # 粒子偏移（X/Y/Z）
+    x-offset: 0.3
+    y-offset: 0.5
+    z-offset: 0.3
+
+    # 粒子颜色（RGB值）
+    color: 255,0,0
+
+    # 粒子大小
+    size: 1.5
+
+# =============== 游戏机制设置 ===============
+gameplay:
+  # 攻击倒地玩家时减少的时间（秒）
+  attack-penalty: 5
+
+  # 蹲下加速死亡时的每秒减少时间
+  isSneaking: 2
+
+  # 自动复活检查间隔（秒）
+  auto-revive-check: 1
+
+# =============== 音效设置 ===============
+sounds:
+  # 进入倒地状态音效
+  down-sound:
+    type: ENTITY_ENDERMAN_DEATH
+    volume: 1.0
+    pitch: 0.8
+
+  # 复活成功音效
+  revive-sound:
+    type: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.2
+
+# =============== 高级设置 ===============
+advanced:
+  # 仇恨清除范围（方块半径）
+  mob-clear-radius: 24
+
+  # 救援需要保持的视线角度（0.0-1.0）
+  rescue-angle: 0.8
+
+  # 救援所需时间（秒）
+  rescue-duration: 5
+
+  # 救援最大距离（方块）
+  rescue-distance: 3
+
+# =============== 消息文本 ===============
+messages:
+  # 动作栏提示
+  actionbar:
+    countdown: "&c按住SHIFT加速死亡 &7| &e剩余: &6%d秒"
+    attack-penalty: "&c-%d秒 &7剩余时间: &e%d秒"
+    jump-blocked: "&c倒地状态禁止跳跃"
+
+  # 标题文字
+  titles:
+    down-title: "&c&l你倒下了！"
+    down-subtitle: "&e生命回满自动复活 或等待救援"
+    revive-title: "&a&l复活成功！"
+    revive-subtitle: "&e生命恢复至%.0f%%"
+
+  # 交互提示
+  interactions:
+    item-blocked: "&c倒地时无法交互物品"
+    block-place: "&c倒地时无法放置方块"
+    rescue-start: "&a开始救援 %s..."
+    rescue-interrupted: "&c救援中断！"

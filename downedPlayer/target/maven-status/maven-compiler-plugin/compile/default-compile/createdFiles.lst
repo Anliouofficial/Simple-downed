@@ -1,0 +1,13 @@
+com\example\downedPlayer\RescuePlugin$RescueSession.class
+com\example\downedPlayer\RescuePlugin$ActionRestrictionListener.class
+com\example\downedPlayer\RescuePlugin$InteractionListener.class
+com\example\downedPlayer\DownedPlayer.class
+com\example\downedPlayer\RescuePlugin$CombatListener$1.class
+com\example\downedPlayer\RescuePlugin$MovementListener$1.class
+com\example\downedPlayer\RescuePlugin$MovementListener.class
+com\example\downedPlayer\RescuePlugin.class
+com\example\downedPlayer\RescuePlugin$RescueSession$1.class
+com\example\downedPlayer\RescuePlugin$1.class
+com\example\downedPlayer\DownedPlayer$BossBarStyle.class
+com\example\downedPlayer\DownedPlayer$1.class
+com\example\downedPlayer\RescuePlugin$CombatListener.class

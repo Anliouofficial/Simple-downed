@@ -1,0 +1,6 @@
+name: downedPlayer
+main: com.example.downedPlayer.RescuePlugin
+version: 1.0
+api-version: 1.21
+author: Anliou
+description: Advanced player rescue system with visual effects
